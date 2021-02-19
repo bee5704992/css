@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .send_msg {
+            position: fixed;
+            font-family: Lato, "Open Sans", sans-serif;
+            font-size: 15px;
+            background-color: rgb(252, 84, 36);
+            color: white;
+            width: 126px;
+            height: 40px;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            bottom: 0px;
+            right: 10px;
+            z-index: 100;
+        }
+
+        .form {
+            margin: 0 20vw;
+            background-color: white;
+            text-align: center;
+            position: relative;
+            bottom: 33vh;
+            padding-top: 3vw;
+            border-radius: 20px;
+            font-size: 19px;
+            box-shadow: 0 0 50px rgba(219, 213, 213, 0.6);
+        }
+
+        input[type=text] {
+            border: 1px solid rgb(223, 223, 223);
+            border-radius: 5px;
+            height: 45px;
+            width: 100%;
+        }
+
+        .form p {
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+
+
+
+        .name input {
+            margin-right: 15px;
+        }
+
+        .message input {
+            height: 200px;
+        }
+
+        .send {
+            margin-top: 45px;
+            margin-bottom: 60px;
+            display: inline-block;
+            background-color: #e91126;
+            padding: 7px 60px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+
+        .main_container {
+            margin: 0 20vw;
+            position: relative;
+            bottom: 250px;
+        }
+        .text_container {
+            margin-top: 30px;
+        }
+        .text_container div {
+            display: inline-block;
+            width: 49%;
+            margin-bottom: 30px;
+            vertical-align: top;
+        }
+        .text_container div h1 {
+            color: #e91126;
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+        .text_container div li {
+            color: #7a7a7a;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div class=".sidebar__logo">
+            <div style="position: fixed; right: 3vw;">
+                <div style="background-color: #FC5424; width: 50px; height: 30px;"></div>
+                <div style="font-size: 11px; text-align: center;color: rgb(114, 114, 114);">A B O U T</div>
+            </div>
+            <p
+                style="color: #FC5424; fill: #FC5424; font-weight: bold; font-size: 35px; position: fixed;left: 3vw;top: 20px;">
+                p</p>
+            <img src="./pimclick/pimclick-logotype.svg" width="45px" style="position: fixed;bottom: 50vh;left: 2.3vw;">
+            <p style="color: #FC5424; fill: #FC5424; font-size: 35px; position: fixed;left: 3vw;bottom: 43vh;">|</p>
+        </div>
+
+        <div class="send_msg"><span style="line-height: 40px;">Send message</span></div>
+
+        <div class="header">
+            <div class="image responsive">
+                <img style="width: 100vw; position: relative; bottom: 105px; z-index: -100;"
+                    src="https://www.pimclick.com/wp-content/uploads/2018/11/contact-banner.jpg" alt="&nbsp;">
+            </div>
+        </div>
+        <div class="main">
+
+            <div class="form">
+                <p style="
+                color: #2b2d2f;
+                font-size: 55px;
+                font-weight: bold;
+                ">Contact us <span style="color: #fe214c;">today</span></p>
+
+                <form action="#" style="color: #7a7a7a;">
+                    <div style=" margin: 0 5vw;">
+                        <div class="name">
+                            <div style="text-align: left;">
+                                <p>Your Name(require)</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div style="text-align: left;">
+                                <p>Your Email(require)</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="subject">
+                            <div style="text-align: left;">
+                                <p>Subject</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div style="text-align: left;">
+                                <p>Your Message</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="send">
+                            SEND
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="main_container">
+                <div
+                    style="text-align: center; color: #7a7a7a; font-size: 25px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Pimclick is a full service web design and online marketing agency offering a unique blend of
+                    creativity and expertise within the entirety of the digital spectrum. With headquarters located in
+                    Paris, France and branch offices dispersed throughout major cities such as Dubai, Hong Kong,
+                    Casablanca and Bangkok.
+                </div>
+
+                <div style="margin-top: 80px;">
+                    <iframe style="width: 100%; height: 23vw;" src="https://www.youtube.com/embed/r0q6a_9fg_Y" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="text_container">
+                    <div class="digital_strategy">
+                        <h1>Digital<br>Strategy</h1>
+                        <ul>
+                            <li>Business Intelligence</li>
+                            <li>SEO – Search Engine Optimization</li>
+                            <li>SEM streategy</li>
+                            <li>Digital Content</li>
+                            <li>Branding Design</li>
+                            <li>UX & UI Design</li>
+                            <li>Product Prototype</li>
+                        </ul>
+                    </div>
+
+                    <div class="digital_production">
+                        <h1>Digital<br>Production</h1>
+                        <ul>
+                            <li>WebSites & Microsites</li>
+                            <li>Responsive Design / Development</li>
+                            <li>Mobile APP & Games</li>
+                            <li>Intranet & Extranet</li>
+                            <li>Virtual & Augmented Reality</li>
+                            <li>Interactive Installations</li>
+                        </ul>
+                    </div>
+
+                    <div class="e-market">
+                        <h1>E-Marketing</h1>
+                        <ul>
+                            <li>BCampaigns management</li>
+                            <li>Market research</li>
+                            <li>User analysis</li>
+                            <li>Brand activation</li>
+                            <li>E-Commerce Development</li>
+                            <li>Social Media strategy and</li>
+                            <li>optimisation</li>
+                            <li>Advocacy & Influencer</li>
+                        </ul>
+                    </div>
+
+                    <div class="graphic_design">
+                        <h1>Graphic Design</h1>
+                        <ul>
+                            <li>Creative Art direction</li>
+                            <li>Branding & Identity</li>
+                            <li>3D modeling / Animation</li>
+                            <li>UI/UX design</li>
+                            <li>Prints & Signaletics</li>
+                            <li>Visual storytelling</li>
+                            <li>Layouting & Infographics</li>
+                            <li>Typography</li>
+                        </ul>
+                    </div>
+
+                    <div class="video_production">
+                        <h1>Video<br>Production</h1>
+                        <ul>
+                            <li>Campaigns management</li>
+                            <li>Scripting / Story Boarding</li>
+                            <li>Filming</li>
+                            <li>Editing/Grading</li>
+                            <li>Motion Design</li>
+                            <li>Sound design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

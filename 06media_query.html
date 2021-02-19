@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            text-align: center;
+            color: rgb(90, 90, 90);
+        }
+        h1 {
+            color: rgb(83, 78, 78);
+        }
+
+        .image {
+            width: 80vw;
+            margin: auto;
+        }
+        img {
+            width: 80vw;
+        }
+        
+        [class^=text] {
+            width: 26vw;
+            padding-bottom: 10px;
+            background-color: antiquewhite;
+            margin: 5px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: justify;
+        }
+
+
+
+        @media (max-width: 800px) {
+            [class^=text] {
+                width: 39vw;
+
+                font-size: 15px;
+            }
+            .textbox3 {
+                display: block;
+                margin: auto;
+                width: 80vw;
+
+            }
+
+        }
+
+        @media (max-width: 580px) {
+            [class^=text] {
+                display: block;
+                width: 80vw;
+                margin: 5px auto;
+            
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="./unsplash.jpg" alt="">
+    </div>
+
+    <div class="textbox1">
+        <h1>Header1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, dolorum? Possimus deleniti incidunt asperiores laudantium a libero hic doloribus dolorum expedita impedit laborum dicta voluptatem cum rerum corrupti unde consectetur, architecto sed repellat voluptatibus! Porro autem officia unde incidunt deleniti? Iure harum voluptates vel rerum. Delectus, cum corrupti? Deserunt, est.</p>
+    </div>
+        
+    <div class="textbox2">
+        <h1>Header2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero numquam, velit nemo consectetur dolorem cupiditate vel, placeat harum, minima sapiente aut laboriosam. Dolores aspernatur exercitationem nemo enim eveniet ullam animi obcaecati, nostrum porro asperiores! Dignissimos atque est labore earum nostrum, pariatur, sunt magni iusto suscipit voluptatibus, itaque quasi deleniti excepturi.</p>
+    </div>
+
+    <div class="textbox3">
+        <h1>Header3</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque placeat maiores ut expedita, iusto id nobis consequatur, eligendi odio commodi voluptates. Ullam voluptas necessitatibus error debitis quia labore, enim qui eaque. Neque enim ducimus quisquam ratione corporis quos perferendis ipsa explicabo itaque sequi asperiores placeat, nobis accusantium minima tenetur voluptatum!</p>
+    </div>
+</body>
+</html>

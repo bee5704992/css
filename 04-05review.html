@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <p>4.1 value ใน display property มีอะไรบ้าง</p>
+    <table>
+        <tr>
+            <th>inline</th>
+            <td>Displays an element as an inline element (like &lt;span>). Any height and width properties will have no
+                effect</td>
+        </tr>
+        <tr>
+            <th>block</th>
+            <td>Displays an element as a block element (like &lt;p>). It starts on a new line, and takes up the whole
+                width</td>
+        </tr>
+        <tr>
+            <th>flex</th>
+            <td>Displays an element as a block-level flex container</td>
+        </tr>
+        <tr>
+            <th>grid</th>
+            <td>Displays an element as a block-level grid container</td>
+        </tr>
+        <tr>
+            <th>inline-block</th>
+            <td>Displays an element as an inline-level block container. The element itself is formatted as an inline
+                element, but you can apply height and width values</td>
+        </tr>
+        <tr>
+            <th>none</th>
+            <td>The element is completely removed</td>
+        </tr>
+    </table>
+
+    <p>4.2 grid และ flex แตกต่างกันอย่างไร</p>
+    <table>
+        <tr>
+            <th>grid</th>
+            <th>flex</th>
+        </tr>
+        <tr>
+            <td>
+                เป็นการจัดที่ต้องคำนึงถึงเส้นในตาราง<br>
+                เช่น grid row, grid line, grid column, gap row, gap column
+            </td>
+            <td>
+                เป็นการจัดแบบเรียงต่อๆกัน ไม่มีตารางให้<br>
+                ขยาย,หดitemsได้
+            </td>
+        </tr>
+    </table>
+
+    <p>4.3 justify and align แตกต่างกันอย่างไร</p>
+    <table>
+        <tr>
+            <th>justify-content</th>
+            <td>จัด items ใน container แบบแนวนอน</td>
+        </tr>
+        <tr>
+            <th>align-content</th>
+            <td>จัด items ใน container แบบแนวตั้ง</td>
+        </tr>
+    </table>
+
+    <p>5.1 position คืออะไร และ อะไรบ้าง</p>
+    <table>
+        <tr>
+            <th>static</th><td>เป็นค่าพื้นฐานของทุกบล็อกโดนจะเลื่อนตามหน้าเว็บปกติ</td>
+        </tr>
+        <tr>
+            <th>relative</th><td>การเลื่อนออกจากตำแหน่งเดิม ตามที่เรากำหนดการดัน block จากทาง ซ้าย ขวา บน ล่าง</td>
+        </tr>
+        <tr>
+            <th>fixed</th><td>กำหนดให้ block นั้นยึดอยู่กับที่บนหน้าเว็บ</td>
+        </tr>
+        <tr>
+            <th>absolute</th><td>การเลื่อนออกจากมุมซ้ายบนสุดของหน้าจะ ตามการกำหนดการดัน block จากทาง ซ้าย ขวา บน ล่าง</td>
+        </tr>
+        <tr>
+            <th>sticky</th><td>การรวม relative กับ fixed ไว้ด้วยกัน โดยการกำหนด relative เพิ่มว่าจะให้ไป fix ที่top หรือ bottom ทำให้เราเห็น block นั้นเลื่อนและถูกตรึง ไว้เมื่อเรา เลื่อน scroll เมาส์</td>
+        </tr>  
+    </table>
+
+    <p>5.2 z-index คืออะไรใช้อย่างไร</p>
+    <table>
+        <tr>
+            <th>z-index คืออะไร</th>
+            <th>z-index ใช้อย่างไร</th>
+        </tr>
+        <tr>
+            <td>
+                Z-index : เป็นการจัดการ element ในรูปแบบชั้น layer บนหน้าจอ<br>โดยค่าน้อยจะอยู่ด้านหลัง
+                ส่วนค่ามากจะอยู่ด้านหน้า <br>ค่าเริ่มต้นของทุก element คือ z-index = 0
+            </td>
+            <td>
+                img {<br>
+                    position: absolute;<br>
+                    ....;<br>
+                    z-index: -1;<br>
+                  }<br>
+
+                  z-index ทำงานเฉพาะ element ที่ใส่ค่า position
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

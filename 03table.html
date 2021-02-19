@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: rgb(66, 66, 66);
+            font-family: sans-serif;
+        }
+
+        div.bigDiv1 {
+            box-sizing: border-box;
+            width: 600px;
+            height: 410px;
+            border: 3px solid rgb(99, 99, 99);
+            border-radius: 4px;
+            position: relative;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        div.bigDiv2 {
+            margin-top: 20px;
+            margin-left: 20px;
+            box-sizing: border-box;
+            width: 600px;
+            height: 410px;
+            border: 15px solid rgb(240, 240, 240)
+        }
+
+        div.top {
+            margin-left: 35px;
+            margin-top: 35px;
+        }
+        div.middle {
+            border-top: 2px solid rgb(201, 201, 201);
+            background-color: rgb(226, 226, 226);
+            height: 35px;
+            width: 540px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        select {
+            font-size: 16px;
+            color: black;
+        }    
+
+        div.bottom {
+            margin-left: 35px;
+            margin-top: 10px;
+        }        
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="bigDiv2">
+            <div class="bigDiv1">
+
+                <div class="top">
+                    <div>
+                        <label for="Name">Name <span style="color: rgb(255, 0, 0);">*</span>:</label>
+                        <input type="text" name="Name" style="margin-left: 80px; height: 20px;">
+                        <button style="width: 20px; background-color: goldenrod; border: 0; border-radius: 3px;">?</button>
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <label for="Tab_Text">Tab Text <span style="color: rgb(255, 0, 0);">*</span>:</label>
+                        <input type="text" name="Tab_Text" style="margin-left: 58px; height: 20px;">
+                        <button style="width: 20px; background-color: goldenrod; border: 0; border-radius: 3px;">?</button>
+                    </div>
+
+                    <div style="margin-top: 5px;">
+                        <label for="URL">URL <span style="color: rgb(255, 0, 0);">*</span>:</label>
+                        <span style="margin-left: 92px;">http://www.wizehive.com/webform/</span>
+                        <input type="text" name="URL" style="height: 20px; width: 80px;">
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <p style="margin-top: 7px; font-size: 15px; margin-left: 8px;"><b>FORM SETUP</b></p>
+                </div>
+
+                <div class="bottom">
+                    <div>
+                        <label for="Form">Form:</label>
+                        <select name="Form" id="Form" style="height: 25px; width: 170px; margin-left: 98px;"><option value=""></option></select>
+                        <button><b>Edit</b></button>
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <label for="Logo">Logo:</label>
+                        <span style="margin-left: 100px;">no logo uploaded</span>
+                        <button style="margin-left: 48px;"><b>Upload Logo</b></button>
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <label for="Template">Template Text:</label>
+                        <select name="Template" id="Template" style="height: 25px; width: 170px; margin-left: 32px;"><option value="English">English</option></select>
+                        <button><b>Edit</b></button>
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <label for="Review">Review Form:</label>
+                        <select name="Review" id="Review" style="height: 25px; width: 170px; margin-left: 43px;"><option value="Default">Default</option></select>
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <label for="Review2">Review Score:</label>
+                        <select name="Review2" id="Review2" style="height: 25px; width: 170px; margin-left: 40px;"><option value="Rating">Rating</option></select>
+                        <button><b>Reload Fields</b></button>
+                    </div>
+                    <div style="margin-top: 5px;"> 
+                        <label for="Scoring">Scoring Type:</label>
+                        <select name="Scoring" id="Scoring" style="height: 25px; width: 80px; margin-left: 43px;"><option value="Average">Average</option></select>
+                    </div>
+                    <div style="margin-top: 5px;">
+                        <label for="Max">Max Score:</label>
+                        <input type="text" name="Max" value="4.00" style="height: 20px; margin-left: 62px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
